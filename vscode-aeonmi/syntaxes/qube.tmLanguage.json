@@ -1,0 +1,10 @@
+{
+  "scopeName": "source.qube",
+  "name": "Qube",
+  "patterns": [
+    { "match": "\\b(state|apply|collapse|assert|log|print|∴|∵)\\b", "name": "keyword.control.qube" },
+    { "match": "//.*$", "name": "comment.line.double-slash.qube" },
+    { "match": "\\b(H|X|Y|Z|S|T|CNOT|CZ|SWAP|Rx|Ry|Rz)\\b", "name": "support.function.qube" },
+    { "match": "\|[01+\-ψφ\w]+⟩", "name": "constant.character.qubit" }
+  ]
+}

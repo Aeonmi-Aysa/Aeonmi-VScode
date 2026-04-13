@@ -1,0 +1,16 @@
+{
+  "Function": {
+    "prefix": "fn",
+    "body": [
+      "fn ${1:name}(${2:args}) {",
+      "  $0",
+      "}"
+    ],
+    "description": "Aeonmi function snippet"
+  },
+  "Let": {
+    "prefix": "let",
+    "body": ["let ${1:name} = ${2:value};"],
+    "description": "Let declaration"
+  }
+}

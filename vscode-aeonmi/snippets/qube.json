@@ -1,0 +1,35 @@
+{
+  "State": {
+    "prefix": "state",
+    "body": [
+      "state ${1:name} = |0⟩",
+      "$0"
+    ],
+    "description": "Declare a quantum state"
+  },
+  "Apply Gate": {
+    "prefix": "apply",
+    "body": [
+      "apply ${1:Gate} -> ${2:qubit}",
+      "$0"
+    ],
+    "description": "Apply a gate to a qubit"
+  },
+  "Bell": {
+    "prefix": "bell",
+    "body": [
+      "// Bell state circuit",
+      "state q0 = |0⟩",
+      "state q1 = |0⟩",
+      "apply H -> q0",
+      "apply CNOT(q0, q1)",
+      "collapse q0 -> r0",
+      "collapse q1 -> r1",
+      "assert r0 ∈ {0, 1}",
+      "assert r1 ∈ {0, 1}",
+      "log(r0)",
+      "log(r1)"
+    ],
+    "description": "Full Bell state snippet"
+  }
+}

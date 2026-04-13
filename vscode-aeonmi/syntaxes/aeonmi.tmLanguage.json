@@ -1,0 +1,11 @@
+{
+  "scopeName": "source.aeonmi",
+  "name": "Aeonmi",
+  "patterns": [
+    { "match": "\\b(fn|function|let|const|if|else|while|for|return|import|true|false|null|qubit|superpose|entangle|measure|print|log)\\b", "name": "keyword.control.aeonmi" },
+    { "match": "//.*$", "name": "comment.line.double-slash.aeonmi" },
+    { "match": "[⧉‥⊗↦←]", "name": "punctuation.aeonmi" },
+    { "match": "\".*?\"", "name": "string.quoted.double.aeonmi" },
+    { "match": "\\b[0-9]+(\\.[0-9]+)?\\b", "name": "constant.numeric.aeonmi" }
+  ]
+}

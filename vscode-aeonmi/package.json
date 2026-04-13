@@ -1,0 +1,68 @@
+{
+  "name": "aeonmi",
+  "displayName": "Aeonmi",
+  "publisher": "aeonmi",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "description": "Aeonmi language support (.ai and .qube) — minimal scaffold",
+  "main": "extension.js",
+  "activationEvents": [
+    "onLanguage:aeonmi",
+    "onLanguage:qube"
+  ],
+  "scripts": {
+    "package": "vsce package"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "aeonmi",
+        "aliases": ["Aeonmi", "aeonmi"],
+        "extensions": [".ai"],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "qube",
+        "aliases": ["Qube", "qube"],
+        "extensions": [".qube"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "aeonmi",
+        "scopeName": "source.aeonmi",
+        "path": "./syntaxes/aeonmi.tmLanguage.json"
+      },
+      {
+        "language": "qube",
+        "scopeName": "source.qube",
+        "path": "./syntaxes/qube.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "aeonmi",
+        "path": "./snippets/aeonmi.json"
+      },
+      {
+        "language": "qube",
+        "path": "./snippets/aeonmi.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "aeonmi.hello",
+        "title": "Aeonmi: Hello"
+      }
+    ]
+  },
+  "keywords": ["aeonmi", "language", "quantum"],
+  "homepage": "",
+  "repository": {
+    "type": "none",
+    "url": ""
+  }
+}
